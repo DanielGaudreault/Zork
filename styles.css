@@ -1,0 +1,72 @@
+body {
+    background-color: #000;
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    width: 800px;
+    max-width: 100%;
+}
+
+h1 {
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+#output {
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #111;
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
+}
+
+#prompt {
+    margin-right: 10px;
+    color: #0f0;
+}
+
+#command {
+    flex-grow: 1;
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+    outline: none;
+}
+
+#command:focus {
+    border-color: #0f0;
+}
+
+/* Scrollbar styling */
+#output::-webkit-scrollbar {
+    width: 10px;
+}
+
+#output::-webkit-scrollbar-track {
+    background: #111;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+#output::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
